@@ -41,9 +41,17 @@ Study security fundamentals, common threats, risk management, and incident respo
 - D. `192.168.1.192/26`
 
 <details>
-<summary><strong>Reveal the answer and explanation</strong></summary>
+<summary>Click here to reveal the answer</summary>
 
 **Correct answer: B — `192.168.1.64/26`**
+
+A `/26` prefix corresponds to the subnet mask
+`255.255.255.192`. The block size is 64 addresses.
+
+Since 70 falls between 64 and 127, the network address
+is `192.168.1.64`.
+
+</details>
 
 A `/26` prefix corresponds to the subnet mask `255.255.255.192`. The block size in the last octet is 64, so the subnet network addresses are 0, 64, 128, and 192.
 
