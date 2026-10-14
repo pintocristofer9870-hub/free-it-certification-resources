@@ -55,3 +55,12 @@ Always consult the relevant certification provider's official exam objectives fo
 ---
 
 **Learn consistently. Practice thoughtfully. Build your IT skills.**
+## 📄 License
+
+Original educational study guides and practice questions in this
+repository are licensed under
+[Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/).
+
+Please provide appropriate attribution when sharing or adapting
+licensed materials. Third-party names, trademarks, and materials
+may be subject to separate rights and terms.
