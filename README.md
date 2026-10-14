@@ -1,4 +1,8 @@
+## 📂 Study Guides
 
+- [Networking: Subnetting Practice](networking/subnetting-practice.md)
+- [Cloud Computing: AWS Study Guide](cloud/aws-study-guide.md)
+- [Cybersecurity: Security Fundamentals](cybersecurity/security-fundamentals.md)
 # Free IT Certification Study Resources
 
 Welcome! This repository provides free, community-friendly study resources for people preparing for IT certifications in networking, cloud computing, and cybersecurity.
