@@ -1,26 +1,27 @@
-## 📂 Study Guides
-
-- [Networking: Subnetting Practice](networking/subnetting-practice.md)
-- [Cloud Computing: AWS Study Guide](cloud/aws-study-guide.md)
-- [Cybersecurity: Security Fundamentals](cybersecurity/security-fundamentals.md)
 # Free IT Certification Study Resources
 
-Welcome! This repository provides free, community-friendly study resources for people preparing for IT certifications in networking, cloud computing, and cybersecurity.
+Welcome to **Free IT Certification Study Resources**, a community-friendly learning repository from [ExamsTeacher.com](https://examsteacher.com/).
 
-Our goal is to help learners understand technical concepts, practice problem-solving, and prepare for certification exams with confidence.
+Our goal is to make IT certification preparation easier through clear explanations, practical exercises, revision notes, and original practice questions.
 
-## 📚 Study Topics
+Whether you're building your IT foundations or preparing for a certification exam, use these resources to learn step by step and strengthen your technical skills.
+
+## 📚 Learning Areas
 
 - **Networking:** IP addressing, subnetting, VLANs, routing, and troubleshooting.
-- **Cloud Computing:** AWS services, Microsoft Azure fundamentals, and cloud architecture.
-- **Cybersecurity:** Security fundamentals, risk management, and incident response.
-- **Certification Preparation:** Study plans, revision checklists, and original practice questions.
+- **Cloud Computing:** AWS services, Microsoft Azure fundamentals, and cloud concepts.
+- **Cybersecurity:** Security principles, risk management, and incident response.
+- **Exam Preparation:** Study plans, revision checklists, and original practice questions.
 
-## 🧠 Practice Question: Networking
+## 🗂️ Explore the Repository
 
-A computer has the IPv4 address `192.168.1.70/26`.
+- [Browse networking resources](networking/)
 
-Which network does this address belong to?
+More study guides and practice materials can be added as the repository grows.
+
+## 🧠 Practice Question: IPv4 Subnetting
+
+**Question:** A computer has the IPv4 address `192.168.1.70/26`. Which network does this address belong to?
 
 - A. `192.168.1.0/26`
 - B. `192.168.1.64/26`
@@ -28,43 +29,48 @@ Which network does this address belong to?
 - D. `192.168.1.192/26`
 
 <details>
-<summary>Show the answer and explanation</summary>
+<summary><strong>Reveal the answer and explanation</strong></summary>
 
 **Correct answer: B — `192.168.1.64/26`**
 
-A `/26` subnet mask is `255.255.255.192`, giving a block size of 64 addresses in the last octet.
+A `/26` prefix corresponds to the subnet mask `255.255.255.192`. The block size in the last octet is 64, so the subnet network addresses are 0, 64, 128, and 192.
 
-The subnet ranges begin at 0, 64, 128, and 192. Since 70 falls between 64 and 127, the network address is `192.168.1.64`.
+Since 70 falls between 64 and 127, the network address is **`192.168.1.64`**.
 
 </details>
 
-## 📖 More Practice and Learning
+## 🎯 How to Use These Resources
 
-Looking for additional IT certification practice questions, explanations, and preparation resources?
+1. Choose a topic you want to learn.
+2. Review the explanations and notes.
+3. Solve practice questions without looking at the answers.
+4. Review mistakes and revisit difficult concepts.
+5. Check the relevant certification provider's official exam objectives before your exam.
 
-Visit [ExamsTeacher.com](https://examsteacher.com/) to explore available study resources.
+## 🌐 Learn More at ExamsTeacher.com
 
-## 🤝 Contributions
+Visit **[ExamsTeacher.com](https://examsteacher.com/)** for additional educational resources and certification preparation materials.
+
+## 🤝 Contributing
 
 Suggestions, corrections, and original educational contributions are welcome.
 
-Please ensure that contributions are accurate, clearly explained, and based on material you have permission to share.
+Please keep contributions accurate, clearly explained, respectful, and based on content you have permission to share. Do not upload copyrighted exam dumps or confidential exam questions.
 
 ## ⚠️ Disclaimer
 
-This is an independent educational resource and is not affiliated with or endorsed by Cisco, AWS, Microsoft, CompTIA, or other certification providers.
+This repository is an independent educational resource. It is not affiliated with or endorsed by Cisco, Amazon Web Services (AWS), Microsoft, CompTIA, or any other certification provider.
 
-Always consult the relevant certification provider's official exam objectives for the latest requirements.
+Certification names and trademarks belong to their respective owners. Exam objectives and requirements can change, so consult the relevant provider's official website for current information.
+
+## 📄 License
+
+Original educational study guides and practice questions in this repository are licensed under the [Creative Commons Attribution 4.0 International license (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/).
+
+Please provide appropriate attribution when sharing or adapting licensed materials. Third-party content, names, trademarks, and materials may be subject to separate rights and terms.
 
 ---
 
 **Learn consistently. Practice thoughtfully. Build your IT skills.**
-## 📄 License
 
-Original educational study guides and practice questions in this
-repository are licensed under
-[Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/).
-
-Please provide appropriate attribution when sharing or adapting
-licensed materials. Third-party names, trademarks, and materials
-may be subject to separate rights and terms.
+Maintained as part of the ExamsTeacher.com learning initiative.
