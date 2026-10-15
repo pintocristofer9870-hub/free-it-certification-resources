@@ -76,7 +76,6 @@ The block size is 64 addresses, so the subnet ranges in the last octet are:
 The host address ends in `.70`, which falls in the 64–127 range. Therefore, its network address is `192.168.1.64/26`.
 
 </details>
-
 ## 🎯 How to Use These Resources
 
 1. **Choose a topic:** Start with a subject or certification
