@@ -30,21 +30,30 @@ Whether you're building your IT foundations or preparing for a certification exa
   solve original practice questions, and track your progress.
 
 
+
 ## 🗂️ Explore Study Resources
 
 ### 🌐 Networking
-Practice IP addressing, subnetting, routing, and troubleshooting.
 
-[Browse Networking Resources](https://github.com/pintocristofer9870-hub/free-it-certification-resources/tree/main/networking)
+Practice IP addressing and subnetting with these learning resources.
+
+- [Browse All Networking Resources](https://github.com/pintocristofer9870-hub/free-it-certification-resources/tree/main/networking)
+- [Subnetting Practice Questions](https://github.com/pintocristofer9870-hub/free-it-certification-resources/blob/main/networking/subnetting-practice.md)
+
 ### ☁️ Cloud Computing
+
 Learn cloud fundamentals, AWS services, security, and pricing.
 
-[Browse Cloud Resources](https://github.com/pintocristofer9870-hub/free-it-certification-resources/tree/main/cloud)
+- [Browse All Cloud Resources](https://github.com/pintocristofer9870-hub/free-it-certification-resources/tree/main/cloud)
+- [AWS Study Guide](https://github.com/pintocristofer9870-hub/free-it-certification-resources/blob/main/cloud/aws-study-guide.md)
 
 ### 🔐 Cybersecurity
-Study security fundamentals, common threats, risk management, and incident response.
 
-[Browse Cybersecurity Resources](https://github.com/pintocristofer9870-hub/free-it-certification-resources/tree/main/cybersecurity)
+Study security fundamentals, common threats, access control, and incident response.
+
+- [Browse All Cybersecurity Resources](https://github.com/pintocristofer9870-hub/free-it-certification-resources/tree/main/cybersecurity)
+- [Cybersecurity Fundamentals Study Guide](https://github.com/pintocristofer9870-hub/free-it-certification-resources/blob/main/cybersecurity/security-fundamentals.md)
+
 
 
 ## 🧠 Practice Question: IPv4 Subnetting
