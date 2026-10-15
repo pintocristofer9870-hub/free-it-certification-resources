@@ -1,308 +1,410 @@
 
-# Cybersecurity Fundamentals Study Guide
+# AWS Cloud Computing Fundamentals: Study Guide
 
-Welcome to this free cybersecurity study guide! This resource introduces essential security concepts for IT students, aspiring security analysts, and people preparing for cybersecurity certifications.
+Welcome to this beginner-friendly AWS study guide. It introduces essential Amazon Web Services (AWS) concepts for learners preparing for cloud computing and IT certification exams.
 
-Learn the fundamentals, review practical examples, and test your understanding with original practice questions.
+For additional IT certification learning and practice resources, visit [Examsteacher.com](https://examsteacher.com/).
 
-## Table of Contents
+## 1. What Is Cloud Computing?
 
-- [What Is Cybersecurity?](#what-is-cybersecurity)
-- [The CIA Triad](#the-cia-triad)
-- [Common Security Threats](#common-security-threats)
-- [Security Controls](#security-controls)
-- [Identity and Access Management](#identity-and-access-management)
-- [Incident Response](#incident-response)
-- [Practice Questions](#practice-questions)
-- [Answers and Explanations](#answers-and-explanations)
-- [Learning Resources](#learning-resources)
+Cloud computing provides on-demand access to computing resources over a network, typically the internet.
 
-## What Is Cybersecurity?
+Instead of purchasing and maintaining all computing hardware yourself, you can use cloud services to run applications, store data, and build infrastructure.
 
-Cybersecurity is the practice of protecting systems, networks, applications, and data against unauthorized access, disruption, damage, and theft.
+### Benefits of Cloud Computing
 
-Its goals include:
-- Protecting sensitive information.
-- Maintaining system availability.
-- Preventing unauthorized changes.
-- Detecting suspicious activity.
-- Responding effectively to security incidents.
+- **Scalability:** Increase or decrease resources as requirements change.
+- **Elasticity:** Automatically or manually adjust capacity to match demand.
+- **Pay-as-you-go pricing:** Pay for many resources based on usage.
+- **Global reach:** Deploy applications in different geographic regions.
+- **Managed services:** Reduce the operational work required for certain infrastructure tasks.
+- **Availability options:** Design systems using multiple resources and locations to improve resilience.
 
-Cybersecurity combines technology, processes, and people. Technical controls alone cannot eliminate every risk.
+Cloud computing does not automatically make every application secure, highly available, or inexpensive. Those outcomes depend on architecture, configuration, and management.
 
-## The CIA Triad
+## 2. AWS Global Infrastructure
 
-The CIA triad is a foundational information security model.
+AWS infrastructure includes Regions, Availability Zones, and edge locations.
 
-### 1. Confidentiality
+### AWS Regions
 
-Confidentiality means ensuring that information is accessible only to authorized people and systems.
+A Region is a separate geographic area where AWS operates infrastructure.
 
-Examples:
-- Encrypting sensitive files.
-- Restricting access using permissions.
-- Protecting account credentials.
+When choosing a Region, consider:
+- User location and latency.
+- Service availability.
+- Regulatory and data residency requirements.
+- Pricing.
+- Disaster recovery requirements.
 
-### 2. Integrity
+### Availability Zones
 
-Integrity means protecting information against unauthorized or improper modification.
+An Availability Zone (AZ) consists of one or more discrete data centers with independent infrastructure within an AWS Region.
 
-Examples:
-- Using cryptographic hashes to detect changes.
-- Applying access controls to important records.
-- Keeping appropriate audit logs.
+Using multiple Availability Zones can help an application remain available when one zone experiences a problem.
 
-### 3. Availability
+### Edge Locations
 
-Availability means ensuring that authorized users can access systems and information when needed.
+Edge locations support services that deliver content or provide functionality closer to end users.
 
-Examples:
-- Maintaining backups.
-- Reducing single points of failure.
-- Using redundancy and recovery procedures.
-- Protecting services against denial-of-service attacks.
+For example, Amazon CloudFront uses a global network of edge locations to deliver content with lower latency.
 
-**Memory tip:** Confidentiality protects secrecy, integrity protects correctness, and availability protects access.
+**Exam tip:** Regions are geographic areas; Availability Zones provide isolated infrastructure within Regions; edge locations support delivery closer to users.
 
-## Common Security Threats
+## 3. Core AWS Compute Services
 
-### Phishing
+### Amazon EC2
 
-Phishing uses deceptive messages or websites to trick people into revealing information, opening malicious files, or taking unsafe actions.
+Amazon Elastic Compute Cloud (EC2) provides virtual servers called instances.
 
-Defenses include:
-- Verifying unexpected requests.
-- Checking links and sender identities.
-- Using multifactor authentication.
-- Reporting suspicious messages.
+Common uses include:
+- Hosting web applications.
+- Running application servers.
+- Processing workloads.
+- Supporting custom operating system configurations.
 
-### Malware
+EC2 customers are responsible for configuring and maintaining many aspects of the guest operating system and software, depending on the service arrangement.
 
-Malware is software designed to perform harmful or unauthorized actions.
+### AWS Lambda
 
-Common categories include:
-- Ransomware
-- Spyware
-- Trojans
-- Worms
-- Viruses
+AWS Lambda runs code in response to events without requiring you to manage the underlying servers directly.
 
-Defenses include patching systems, limiting privileges, using appropriate endpoint protection, and maintaining tested backups.
+Common uses include:
+- Processing uploaded files.
+- Responding to API requests.
+- Automating event-driven tasks.
+- Running scheduled functions.
 
-### Password Attacks
+Lambda is commonly described as a serverless compute service.
 
-Attackers may try stolen credentials, password guessing, or automated attempts to access accounts.
+### AWS Elastic Beanstalk
 
-Defenses include:
-- Unique passwords for each service.
-- Password managers.
-- Multifactor authentication.
-- Rate limiting and account protection.
-- Monitoring suspicious sign-in activity.
+Elastic Beanstalk helps deploy and manage applications while handling much of the underlying infrastructure configuration.
 
-### Social Engineering
+It is useful when developers want to deploy supported applications without manually managing every infrastructure component.
 
-Social engineering manipulates people into disclosing information or performing actions that weaken security.
+## 4. AWS Storage Services
 
-A request may appear to come from a manager, coworker, vendor, or technical support agent.
+### Amazon S3
 
-Verify unusual requests through a trusted communication channel, especially when they involve payments, credentials, or sensitive data.
+Amazon Simple Storage Service (S3) is an object storage service.
 
-### Denial of Service
+Common uses include:
+- Storing images and documents.
+- Hosting static website assets.
+- Retaining backups and archives.
+- Storing data for analytics.
 
-A denial-of-service attack attempts to make a system or service unavailable.
+S3 stores data as objects in buckets.
 
-Possible defenses include traffic filtering, rate limiting, redundancy, monitoring, and suitable denial-of-service protection services.
+### Amazon EBS
 
-## Security Controls
+Amazon Elastic Block Store (EBS) provides block storage volumes designed for use with Amazon EC2.
 
-Security controls help prevent, detect, or reduce the impact of threats.
+Typical uses include:
+- Operating system volumes.
+- Application storage.
+- Databases running on EC2.
 
-### Preventive Controls
+### Amazon EFS
 
-Designed to reduce the likelihood of an incident.
+Amazon Elastic File System (EFS) provides managed file storage that can be shared by multiple supported compute resources.
 
-Examples:
-- Access restrictions.
-- Security awareness training.
-- System hardening.
-- Network segmentation.
+**Exam tip:**
+- S3: Object storage.
+- EBS: Block storage commonly used with EC2.
+- EFS: Shared file storage.
 
-### Detective Controls
+Choose a service according to the application's storage requirements.
 
-Designed to identify suspicious activity or security incidents.
+## 5. AWS Networking Services
 
-Examples:
-- Security logs.
-- Intrusion detection systems.
-- Endpoint monitoring.
-- Security alerts.
+### Amazon VPC
 
-### Corrective and Recovery Controls
+Amazon Virtual Private Cloud (VPC) lets you define a logically isolated network for AWS resources.
 
-Help restore secure operation after a problem.
+A VPC can include:
+- Subnets.
+- Route tables.
+- Network access controls.
+- Security groups.
+- Internet connectivity components.
 
-Examples:
-- Restoring verified backups.
-- Removing malicious software.
-- Applying security patches.
-- Rebuilding compromised systems.
+### Public and Private Subnets
 
-Controls can also be categorized as administrative, technical, and physical.
+A public subnet is associated with routing that can provide a path to an internet gateway.
 
-## Identity and Access Management
+A private subnet does not have a direct route to an internet gateway. Depending on its configuration, resources in a private subnet may still reach external services through other network components, such as a NAT gateway.
 
-Identity and Access Management (IAM) ensures that users and services receive appropriate access to resources.
+A subnet's public or private status depends on its routing and resource configuration, not simply on its name.
+
+### Security Groups
+
+Security groups act as virtual firewalls for supported AWS resources.
+
+They control inbound and outbound traffic using configured rules. Security groups are stateful.
+
+### Network ACLs
+
+Network access control lists (network ACLs) provide subnet-level traffic controls. They are stateless, so inbound and outbound rules must be considered separately.
+
+### Amazon Route 53
+
+Route 53 is AWS's scalable Domain Name System (DNS) service.
+
+It can be used for domain registration, DNS routing, health checks, and supported traffic-routing policies.
+
+## 6. AWS Database Services
+
+### Amazon RDS
+
+Amazon Relational Database Service (RDS) simplifies setting up, operating, and scaling supported relational databases.
+
+Common uses include transactional applications that need relational data and SQL queries.
+
+### Amazon DynamoDB
+
+DynamoDB is a managed NoSQL database service designed for performance at scale.
+
+It is useful for applications that need key-value or document data models and predictable low-latency access patterns.
+
+### Amazon Aurora
+
+Amazon Aurora is a relational database engine compatible with MySQL and PostgreSQL.
+
+It is available through Amazon RDS.
+
+**Exam tip:** RDS and Aurora support relational database workloads; DynamoDB supports NoSQL workloads.
+
+## 7. Identity and Access Management
+
+### AWS IAM
+
+AWS Identity and Access Management (IAM) helps manage authentication and authorization for AWS resources.
+
+IAM concepts include:
+
+- **Users:** Identities for people or applications when appropriate.
+- **Groups:** Collections of IAM users.
+- **Roles:** Identities with permissions that can be assumed by trusted principals.
+- **Policies:** Documents that define permissions.
 
 ### Least Privilege
 
-Give each identity only the permissions necessary to perform its assigned tasks.
+Grant only the permissions needed for a task.
 
-### Multifactor Authentication
+Avoid using overly broad permissions simply because they are convenient.
 
-Multifactor authentication (MFA) requires two or more authentication factors from distinct categories, such as:
-- Something you know.
-- Something you have.
-- Something you are.
+### Root User Security
 
-A password and a PIN are both knowledge factors, so they do not constitute two different factor categories by themselves.
+Protect the AWS account root user carefully.
 
-### Role-Based Access Control
+Recommended practices include:
+- Enable multifactor authentication.
+- Do not use the root user for routine administrative tasks.
+- Secure recovery methods.
+- Review account security settings regularly.
 
-Role-based access control assigns permissions through roles associated with job responsibilities or functions.
+### Shared Responsibility Model
 
-### Authentication vs. Authorization
+AWS and the customer share responsibility for security.
 
-- **Authentication:** Verifies an identity.
-- **Authorization:** Determines what an authenticated identity is permitted to do.
+AWS is responsible for security **of** the cloud, including the underlying infrastructure it operates.
 
-For example, signing in verifies your identity; permission checks determine whether you can access a particular file.
+Customers are responsible for security **in** the cloud according to the services they use and the applicable responsibility model.
 
-## Incident Response
+Customer responsibilities may include:
+- Managing identities and permissions.
+- Protecting data.
+- Configuring network controls.
+- Maintaining guest operating systems on EC2.
+- Configuring applications securely.
 
-Incident response is the structured process of handling security incidents.
+The exact division of responsibility varies by service.
 
-A common high-level lifecycle includes:
+## 8. Monitoring and Management
 
-1. **Preparation:** Establish policies, tools, roles, and response plans.
-2. **Detection and analysis:** Identify suspicious activity and assess its scope.
-3. **Containment:** Limit the incident's impact.
-4. **Eradication:** Remove the cause and malicious artifacts.
-5. **Recovery:** Restore systems safely and monitor their operation.
-6. **Lessons learned:** Review the incident and improve defenses.
+### Amazon CloudWatch
 
-Actual response procedures depend on the incident and the organization's established framework.
+CloudWatch collects and monitors metrics, logs, and events from supported AWS services and applications.
 
-## Practice Questions
+It can support alarms, dashboards, troubleshooting, and operational monitoring.
 
-These are original educational questions, not actual certification exam questions.
+### AWS CloudTrail
+
+CloudTrail records AWS account activity and API events to support auditing, security investigations, and governance.
+
+### AWS Config
+
+AWS Config helps assess, audit, and evaluate the configurations of supported AWS resources over time.
+
+**Exam tip:** CloudWatch focuses on monitoring and observability; CloudTrail records account activity; AWS Config tracks resource configuration and compliance.
+
+## 9. AWS Pricing and Cost Management
+
+AWS offers different pricing approaches depending on the service and workload.
+
+Common considerations include:
+- On-demand pricing.
+- Savings Plans and Reserved Instances where applicable.
+- Spot Instances for suitable interruptible workloads.
+- Storage and data transfer charges.
+- Regional price differences.
+- Resource utilization and idle resources.
+
+### Cost Management Best Practices
+
+- Set budgets and billing alerts.
+- Review cost reports regularly.
+- Remove unused resources.
+- Right-size compute capacity.
+- Select storage tiers according to access needs.
+- Use pricing tools before deploying a workload.
+
+Always review the current pricing details for the specific service and Region.
+
+## 10. Reliability and High Availability
+
+High availability means designing a system to remain operational despite certain failures.
+
+Common design practices include:
+- Deploying across multiple Availability Zones.
+- Using load balancing where appropriate.
+- Monitoring application health.
+- Automating recovery.
+- Creating and testing backups.
+- Documenting recovery procedures.
+
+Disaster recovery planning should consider recovery time objectives (RTO) and recovery point objectives (RPO).
+
+- **RTO:** The target time to restore a service after a disruption.
+- **RPO:** The target for how much data loss, measured in time, is acceptable.
+
+A backup is useful only if it can be restored successfully. Test recovery procedures regularly.
+
+## 11. A Simple AWS Study Plan
+
+Use this four-week outline as a starting point.
+
+### Week 1: Cloud Fundamentals
+
+Study:
+- Cloud computing concepts.
+- AWS global infrastructure.
+- Regions and Availability Zones.
+- Shared responsibility model.
+
+### Week 2: Core Services
+
+Study:
+- EC2 and Lambda.
+- S3, EBS, and EFS.
+- VPC, subnets, and security groups.
+- RDS and DynamoDB.
+
+### Week 3: Security and Operations
+
+Study:
+- IAM and least privilege.
+- MFA and account protection.
+- CloudWatch and CloudTrail.
+- Reliability and cost management.
+
+### Week 4: Revision and Practice
+
+- Review the official exam objectives for your chosen certification.
+- Complete practice questions.
+- Review incorrect answers and their explanations.
+- Practise in the AWS console using safe, budget-conscious configurations.
+- Revise unfamiliar services.
+
+This plan is a general starting point. Adjust it to the certification level and exam version you are targeting.
+
+## 12. Practice Questions
+
+Try to answer the following questions before checking the answer key.
 
 ### Question 1
 
-Which part of the CIA triad focuses on preventing unauthorized changes to information?
+Which AWS service provides object storage?
 
-A. Confidentiality  
-B. Integrity  
-C. Availability  
-D. Authentication  
+A. Amazon EC2  
+B. Amazon S3  
+C. Amazon VPC  
+D. AWS IAM
 
 ### Question 2
 
-An employee receives a deceptive email asking them to enter their company password on a fake login page. What type of threat is this?
+Which AWS service runs code in response to events without requiring you to manage the underlying servers directly?
 
-A. Phishing  
-B. Redundancy  
-C. Encryption  
-D. Network segmentation  
+A. Amazon EBS  
+B. Amazon Route 53  
+C. AWS Lambda  
+D. Amazon RDS
 
 ### Question 3
 
-What is the primary purpose of multifactor authentication?
+Which service is designed to provide virtual servers?
 
-A. To eliminate every cybersecurity threat  
-B. To add another authentication factor from a distinct category  
-C. To replace every access control  
-D. To guarantee that a device contains no malware  
+A. Amazon EC2  
+B. Amazon S3  
+C. AWS CloudTrail  
+D. Amazon DynamoDB
 
 ### Question 4
 
-Which principle recommends giving users only the permissions they need?
+Which AWS service helps manage identities and permissions?
 
-A. High availability  
-B. Least privilege  
-C. Open access  
-D. Non-repudiation  
+A. Amazon CloudFront  
+B. AWS IAM  
+C. Amazon EFS  
+D. Amazon Route 53
 
 ### Question 5
 
-What is the difference between authentication and authorization?
+Which service is commonly used to monitor metrics and logs?
 
-A. Authentication verifies identity; authorization determines permitted actions.
-B. Authentication encrypts data; authorization creates backups.
-C. They always mean exactly the same thing.
-D. Authorization verifies identity; authentication defines file permissions.
+A. Amazon VPC  
+B. Amazon S3  
+C. Amazon CloudWatch  
+D. AWS Organizations
 
 ### Question 6
 
-Which incident-response activity aims to limit the spread or impact of an active incident?
+What is a major benefit of deploying an application across multiple Availability Zones?
 
-A. Preparation  
-B. Containment  
-C. Lessons learned  
-D. Asset procurement  
+A. It removes every possible security risk.  
+B. It guarantees that the application has no downtime.  
+C. It can improve resilience to certain Availability Zone failures.  
+D. It eliminates all data transfer costs.
 
-## Answers and Explanations
+## 13. Answer Key and Explanations
 
-**Question 1: B — Integrity**
+1. **B — Amazon S3.** S3 is AWS object storage for data such as files, backups, and application assets.
+2. **C — AWS Lambda.** Lambda runs functions in response to events without requiring direct server management.
+3. **A — Amazon EC2.** EC2 provides virtual server instances.
+4. **B — AWS IAM.** IAM manages identities, roles, and permissions for AWS resources.
+5. **C — Amazon CloudWatch.** CloudWatch supports monitoring through metrics, logs, alarms, and dashboards.
+6. **C — It can improve resilience to certain Availability Zone failures.** Multi-AZ designs can reduce dependence on a single zone, but they do not guarantee zero downtime.
 
-Integrity protects information against unauthorized or improper modification.
+## 14. Official AWS Learning Resources
 
-**Question 2: A — Phishing**
+Use official sources to verify technical details and prepare for your chosen certification.
 
-Phishing uses deceptive communications to trick recipients into unsafe actions or disclosure of sensitive information.
+- [AWS Certification](https://aws.amazon.com/certification/)
+- [AWS Skill Builder](https://skillbuilder.aws/)
+- [AWS Documentation](https://docs.aws.amazon.com/)
+- [AWS Architecture Center](https://aws.amazon.com/architecture/)
+- [AWS Pricing](https://aws.amazon.com/pricing/)
 
-**Question 3: B — To add another authentication factor from a distinct category**
+Certification objectives and service details may change. Review the official exam guide for the certification and version you plan to take.
 
-MFA makes account compromise more difficult by requiring multiple types of evidence to verify identity.
+## 15. Continue Learning
 
-**Question 4: B — Least privilege**
-
-Least privilege limits unnecessary permissions and reduces the potential impact of compromised accounts.
-
-**Question 5: A — Authentication verifies identity; authorization determines permitted actions.**
-
-These processes work together but serve different purposes.
-
-**Question 6: B — Containment**
-
-Containment limits an incident's impact while the response team investigates and works toward eradication and recovery.
-
-## Learning Resources
-
-Use established resources to expand your cybersecurity knowledge:
-
-- [NIST Cybersecurity Framework](https://www.nist.gov/cyberframework)
-- [NIST Computer Security Resource Center](https://csrc.nist.gov/)
-- [CISA Cybersecurity Resources](https://www.cisa.gov/topics/cybersecurity-best-practices)
-- [OWASP](https://owasp.org/)
-- [ISC2](https://www.isc2.org/)
-
-For certification preparation, consult the current official exam objectives for the certification you are pursuing.
-
-## More Certification Practice
-
-Looking for additional IT certification preparation resources and practice questions?
-
-Visit [ExamsTeacher.com](https://examsteacher.com/) to explore available study materials and practice resources.
-
-Choose material that matches your target certification and supports learning through clear explanations.
+Explore additional IT certification learning and practice resources at [Examsteacher.com](https://examsteacher.com/).
 
 ## Disclaimer
 
-This is an independent educational resource. It is not affiliated with or endorsed by NIST, CISA, ISC2, CompTIA, or any other certification provider.
+This guide is for educational purposes only. It is not an official AWS certification guide and does not guarantee exam success.
 
-All practice questions in this guide are original educational exercises, not actual or leaked certification exam questions.
-
-## Contributing
-
-Suggestions, corrections, and original contributions are welcome. Please ensure all submissions are accurate, responsibly sourced, and appropriate for an educational audience.
+This repository is independent and is not affiliated with or endorsed by Amazon Web Services (AWS). AWS service names and trademarks belong to their respective owners.
