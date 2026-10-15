@@ -60,27 +60,11 @@ Study security fundamentals, common threats, access control, and incident respon
 <details>
 <summary>Click here to reveal the answer and explanation</summary>
 
-
-## 🧠 Practice Question: IPv4 Subnetting
-
-**Question:** A computer has the IPv4 address
-`192.168.1.70/26`. Which network does this address belong to?
-
-- A. `192.168.1.0/26`
-- B. `192.168.1.64/26`
-- C. `192.168.1.128/26`
-- D. `192.168.1.192/26`
-
-<details>
-<summary>Click to reveal the correct answer and explanation</summary>
-
 **Correct answer: B — `192.168.1.64/26`**
 
-A `/26` prefix corresponds to the subnet mask
-`255.255.255.192`.
+A `/26` prefix corresponds to the subnet mask `255.255.255.192`.
 
-The block size is 64 addresses, so the subnet ranges
-in the last octet are:
+The block size is 64 addresses, so the subnet ranges in the last octet are:
 
 | Network address | Address range |
 |---|---|
@@ -89,12 +73,9 @@ in the last octet are:
 | `192.168.1.128/26` | 128–191 |
 | `192.168.1.192/26` | 192–255 |
 
-The host address ends in `.70`, which falls in the
-64–127 range. Therefore, its network address is
-`192.168.1.64/26`.
+The host address ends in `.70`, which falls in the 64–127 range. Therefore, its network address is `192.168.1.64/26`.
 
 </details>
-
 
 ## 🎯 How to Use These Resources
 
