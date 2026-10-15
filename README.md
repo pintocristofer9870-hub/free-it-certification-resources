@@ -41,16 +41,15 @@ Study security fundamentals, common threats, risk management, and incident respo
 - D. `192.168.1.192/26`
 
 <details>
-<summary><strong>Click here to reveal the answer and explanation</strong></summary>
+<summary>Click here to reveal the answer and explanation</summary>
 
 **Correct answer: B — `192.168.1.64/26`**
 
-A `/26` prefix corresponds to the subnet mask `255.255.255.192`. Each subnet contains 64 addresses, so the network addresses are `192.168.1.0`, `192.168.1.64`, `192.168.1.128`, and `192.168.1.192`.
+A `/26` prefix uses the subnet mask `255.255.255.192`. Each subnet contains 64 addresses.
 
-Since the last octet, `70`, falls between `64` and `127`, the network address is **`192.168.1.64/26`**.
+Since 70 falls between 64 and 127, the network address is `192.168.1.64/26`.
 
 </details>
-
 ## 🎯 How to Use These Resources
 
 1. Choose a topic you want to learn.
