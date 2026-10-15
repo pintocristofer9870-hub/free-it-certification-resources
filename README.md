@@ -19,17 +19,16 @@ Whether you're building your IT foundations or preparing for a certification exa
 ### 🌐 Networking
 Practice IP addressing, subnetting, routing, and troubleshooting.
 
-[Browse Networking Resources](networking/)
-
+[Browse Networking Resources](https://github.com/pintocristofer9870-hub/free-it-certification-resources/tree/main/networking)
 ### ☁️ Cloud Computing
 Learn cloud fundamentals, AWS services, security, and pricing.
 
-[Browse Cloud Resources](cloud/)
+[Browse Cloud Resources](https://github.com/pintocristofer9870-hub/free-it-certification-resources/tree/main/cloud)
 
 ### 🔐 Cybersecurity
 Study security fundamentals, common threats, risk management, and incident response.
 
-[Browse Cybersecurity Resources](cybersecurity/)
+[Browse Cybersecurity Resources](https://github.com/pintocristofer9870-hub/free-it-certification-resources/tree/main/cybersecurity)
 
 
 ## 🧠 Practice Question: IPv4 Subnetting
