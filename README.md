@@ -6,12 +6,28 @@ Our goal is to make IT certification preparation easier through clear explanatio
 
 Whether you're building your IT foundations or preparing for a certification exam, use these resources to learn step by step and strengthen your technical skills.
 
+## 📑 Table of Contents
+
+- [Learning Areas](#-learning-areas)
+- [Explore Study Resources](#️-explore-study-resources)
+- [Practice Question: IPv4 Subnetting](#-practice-question-ipv4-subnetting)
+- [How to Use These Resources](#-how-to-use-these-resources)
+- [Learn More at ExamsTeacher.com](#-learn-more-at-examsteachercom)
+- [Contributing](#-contributing)
+- [Disclaimer](#️-disclaimer)
+- [License](#-license)
+
+
 ## 📚 Learning Areas
 
-- **Networking:** IP addressing, subnetting, VLANs, routing, and troubleshooting.
-- **Cloud Computing:** AWS services, Microsoft Azure fundamentals, and cloud concepts.
-- **Cybersecurity:** Security principles, risk management, and incident response.
-- **Exam Preparation:** Study plans, revision checklists, and original practice questions.
+- **Networking:** Learn IPv4 addressing, subnetting, subnet masks,
+  VLANs, routing, switching, and network troubleshooting.
+- **Cloud Computing:** Explore cloud fundamentals, AWS services,
+  Microsoft Azure concepts, identity management, security, and pricing.
+- **Cybersecurity:** Understand security principles, common threats,
+  access control, risk management, incident response, and best practices.
+- **Exam Preparation:** Build study plans, review key concepts,
+  solve original practice questions, and track your progress.
 
 
 ## 🗂️ Explore Study Resources
@@ -43,20 +59,56 @@ Study security fundamentals, common threats, risk management, and incident respo
 <details>
 <summary>Click here to reveal the answer and explanation</summary>
 
+
+## 🧠 Practice Question: IPv4 Subnetting
+
+**Question:** A computer has the IPv4 address
+`192.168.1.70/26`. Which network does this address belong to?
+
+- A. `192.168.1.0/26`
+- B. `192.168.1.64/26`
+- C. `192.168.1.128/26`
+- D. `192.168.1.192/26`
+
+<details>
+<summary>Click to reveal the correct answer and explanation</summary>
+
 **Correct answer: B — `192.168.1.64/26`**
 
-A `/26` prefix uses the subnet mask `255.255.255.192`. Each subnet contains 64 addresses.
+A `/26` prefix corresponds to the subnet mask
+`255.255.255.192`.
 
-Since 70 falls between 64 and 127, the network address is `192.168.1.64/26`.
+The block size is 64 addresses, so the subnet ranges
+in the last octet are:
+
+| Network address | Address range |
+|---|---|
+| `192.168.1.0/26` | 0–63 |
+| `192.168.1.64/26` | 64–127 |
+| `192.168.1.128/26` | 128–191 |
+| `192.168.1.192/26` | 192–255 |
+
+The host address ends in `.70`, which falls in the
+64–127 range. Therefore, its network address is
+`192.168.1.64/26`.
 
 </details>
+
+
 ## 🎯 How to Use These Resources
 
-1. Choose a topic you want to learn.
-2. Review the explanations and notes.
-3. Solve practice questions without looking at the answers.
-4. Review mistakes and revisit difficult concepts.
-5. Check the relevant certification provider's official exam objectives before your exam.
+1. **Choose a topic:** Start with a subject or certification
+   that matches your learning goals.
+2. **Study the fundamentals:** Read the explanations, examples,
+   and revision notes.
+3. **Practice actively:** Attempt the questions before revealing
+   the answers.
+4. **Learn from mistakes:** Review incorrect answers and revisit
+   concepts you find difficult.
+5. **Follow official objectives:** Check the latest exam objectives
+   published by the certification provider.
+6. **Track your progress:** Revisit challenging topics and continue
+   practicing until you understand the concepts confidently.
 
 ## 🌐 Learn More at ExamsTeacher.com
 
