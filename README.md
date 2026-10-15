@@ -31,6 +31,7 @@ Study security fundamentals, common threats, risk management, and incident respo
 
 [Browse Cybersecurity Resources](cybersecurity/)
 
+
 ## 🧠 Practice Question: IPv4 Subnetting
 
 **Question:** A computer has the IPv4 address `192.168.1.70/26`. Which network does this address belong to?
@@ -41,21 +42,13 @@ Study security fundamentals, common threats, risk management, and incident respo
 - D. `192.168.1.192/26`
 
 <details>
-<summary>Click here to reveal the answer</summary>
+<summary><strong>Click here to reveal the answer and explanation</strong></summary>
 
 **Correct answer: B — `192.168.1.64/26`**
 
-A `/26` prefix corresponds to the subnet mask
-`255.255.255.192`. The block size is 64 addresses.
+A `/26` prefix corresponds to the subnet mask `255.255.255.192`. Each subnet contains 64 addresses, so the network addresses are `192.168.1.0`, `192.168.1.64`, `192.168.1.128`, and `192.168.1.192`.
 
-Since 70 falls between 64 and 127, the network address
-is `192.168.1.64`.
-
-</details>
-
-A `/26` prefix corresponds to the subnet mask `255.255.255.192`. The block size in the last octet is 64, so the subnet network addresses are 0, 64, 128, and 192.
-
-Since 70 falls between 64 and 127, the network address is **`192.168.1.64`**.
+Since the last octet, `70`, falls between `64` and `127`, the network address is **`192.168.1.64/26`**.
 
 </details>
 
