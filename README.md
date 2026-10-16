@@ -46,7 +46,6 @@ Find clear explanations, practical exercises, revision notes, and original pract
 - C. `192.168.1.128/26`
 - D. `192.168.1.192/26`
 
-
 <details>
 <summary>Click here to reveal the answer and explanation</summary>
 
@@ -61,7 +60,7 @@ A `/26` prefix uses the subnet mask `255.255.255.192`. Each subnet contains 64 a
 | `192.168.1.128/26` | 128–191 |
 | `192.168.1.192/26` | 192–255 |
 
-The address ends in `.70`, which falls within the 64–127 range. Its network address is therefore `192.168.1.64/26`.
+The address `.70` falls within the 64–127 range, so its network address is `192.168.1.64/26`.
 
 </details>
 
