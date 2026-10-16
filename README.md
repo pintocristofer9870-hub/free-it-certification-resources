@@ -22,7 +22,7 @@ Find clear explanations, practical exercises, revision notes, and original pract
 - **Cloud Computing:** AWS, Microsoft Azure, cloud security, identity management, and pricing.
 - **Cybersecurity:** Security principles, threats, access control, risk management, and incident response.
 - **Exam Preparation:** Study plans, revision notes, practice questions, and progress tracking.
-
+- **CompTIA A+:** [Beginner Study Guide](comptia-a-plus/comptia-a-plus-study-guide.md) with study tips and original practice questions.
 ## 🗂️ Explore Study Resources
 
 ### 🌐 Networking
